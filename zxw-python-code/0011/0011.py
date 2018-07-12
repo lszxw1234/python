@@ -3,7 +3,7 @@ class Input(object):
     def __init__(self):
         self.filter_words = list()
         self.in_strings = ''
-        self.out_strings = 'Human '
+        self.out_strings = 'Human Rights'
         self.load_filter_words()
 
 
@@ -18,7 +18,7 @@ class Input(object):
 
     def std_output(self):
         self.filter_word()
-        print(self.out_strings)Rights
+        print(self.out_strings)
 
     def filter_word(self):
         for word in self.filter_words:
