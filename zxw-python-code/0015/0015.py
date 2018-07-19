@@ -19,16 +19,16 @@ def txt_to_xls(filename):
     sheet = wb.active
     sheet.title = 'Citys'
     for i in range(1,len(file_cintent)+1):
-        # sheet.cell(row=i, column = 1).value = i
+        sheet.cell(row=i, column = 1).value = i
         print(file_cintent)
         list = file_cintent.get(str(i))
-        j = 1
+        j = 2
         if callable(list):
             for cell in list:
                 sheet.cell(row=i, column=j).value = cell
                 j += 1
         else:
-            sheet.cell(row=i, column=1).value = list
+            sheet.cell(row=i, column=2).value = list
 
 
     wb.save('city.xlsx')
